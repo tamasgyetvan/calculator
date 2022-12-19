@@ -14,6 +14,7 @@ body {
 }
 
 #wrapper {
+    padding: 0px;
     border: 2px solid none;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     justify-content: center;
@@ -25,14 +26,14 @@ body {
 .resultContainer {
     display: flex;
     align-items: center;
-    margin: 5px 5px 5px 5px;
-    margin-bottom: 10px;
     border-radius: 15px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     background-color: white;
-    height: 25px;
-    width: auto;
-    padding: 5px 10px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 130px
+    
 }
 
 
@@ -48,10 +49,21 @@ button {
 
 
 .btnRow {
+
     margin: 5px;   
     
 }
 
 #addBtn, #divideBtn, #subtractBtn, #multiplyBtn {
     background-color: #FFAA33;
+}
+
+#acBtn {
+    margin-left: 8px;
+    margin-top: 5px;
+    background-color: rgb(236, 80, 80);   
+}
+
+section:first-child {
+    display: flex;
 }
