@@ -1,10 +1,6 @@
-let calcButtons = document.getElementsByClassName("calcBtn");
+/**Event listener for calcBtn ID objects */
 
-console.log(calcButtons);
-
-
-for (let i = 0; i < calcButtons.length; i++) {
-    calcButtons[i].addEventListener("click", function(e) {
-      console.log(e);
-    });
-}
+let calcButtons = document.querySelectorAll(".calcBtn")
+    .forEach(button => button.addEventListener("click", function(e) {
+        console.log(e);
+    }));
