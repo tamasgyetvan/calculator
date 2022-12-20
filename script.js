@@ -2,7 +2,7 @@
 const resultContainer = document.querySelector(".resultContainer");
 
 /**Container for inputs */
-let input = ""
+let input = "";
 let number1 = "";
 let number2 = "";
 let operation = "";
@@ -24,7 +24,7 @@ function appendValue(value) {
     resultContainer.innerHTML = input;
 
 
-}
+};
 
 /**Function to reset number1 and resultContainer's innerHTML, it clears everything from resultContainer */
 
@@ -35,11 +35,35 @@ function clearResultContainer() {
     operation = "";
     resultContainer.innerHTML = "0";
 
-}
+};
 
 /**Clear button functioning */
 
-let cButton = document.getElementById("acBtn").addEventListener("click", function(e) {
+let clearBtn = document.getElementById("acBtn").addEventListener("click", function(e) {
 
     clearResultContainer();
-})
+});
+
+/**Operator button click events */
+
+let addBtn = document.getElementById("addBtn").addEventListener("click", function(e) {
+
+    operation = "+";
+
+});
+
+let subtractBtn = document.getElementById("subtractBtn").addEventListener("click", function(e) {
+
+    operation = "-";
+
+});
+let divideBtn = document.getElementById("divideBtn").addEventListener("click", function(e) {
+
+    operation = "/";
+
+});
+let multiplyBtn = document.getElementById("multiplyBtn").addEventListener("click", function(e) {
+
+    operation = "*";
+
+});
