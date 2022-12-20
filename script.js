@@ -1,8 +1,11 @@
 /**resultContainer in a variable */
 const resultContainer = document.querySelector(".resultContainer");
 
-/**Container for first number */
+/**Container for inputs */
+let input = ""
 let number1 = "";
+let number2 = "";
+let operation = "";
 
 
 /**Event listener for calcBtn ID objects */
@@ -17,8 +20,9 @@ let calcButtons = document.querySelectorAll(".calcBtn")
 /**Function to append button data-value to resultContainer */
 
 function appendValue(value) {
-    number1+=value;
-    resultContainer.innerHTML = number1;
+    input+= value;
+    resultContainer.innerHTML = input;
+
 
 }
 
@@ -26,6 +30,9 @@ function appendValue(value) {
 
 function clearResultContainer() {
     number1 = "";
+    number2 = "";
+    input = "";
+    operation = "";
     resultContainer.innerHTML = "0";
 
 }
